@@ -14,11 +14,11 @@ on:
       source_repo:
         description: '仓库 (格式 repo)'
         required: true
-        default: ''
+        default: 'nginx:1.13'
       destination_scope:
-        description: '目标Scope (格式 scope)'
+        description: '目标命名空间'
         required: true
-        default: ''
+        default: 'lsf_worksapce'
 
 jobs:
   sync:
